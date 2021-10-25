@@ -29,5 +29,5 @@ jobs:
 
     - name: Build the book with --toc specified
       run: |
-        jupyter-book build book --toc _toc_test.yml
+        jupyter-book build book --toc book/_toc_test.yml
 
