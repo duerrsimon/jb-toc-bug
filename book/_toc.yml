@@ -1,0 +1,9 @@
+format: jb-book
+root: intro
+parts:
+  - caption: JupyterBook
+    chapters:
+    - file: markdown
+    - file: notebooks
+    - file: Exercises/Ex1.ipynb
+    - file: Exercises/Ex2.ipynb
