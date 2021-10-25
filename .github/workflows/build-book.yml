@@ -10,6 +10,7 @@ on:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v2
 
@@ -34,11 +35,5 @@ jobs:
     - name: Build the book with --toc specified in book folder
       run: |
         jupyter-book build book --toc book/_toc_test.yml
-    - name: Build the book with --toc specified
-      run: |
-        jupyter-book build book --toc book/_toc_test.yml
 
-    - name: Build the book with --toc specified
-      run: |
-        jupyter-book build book --toc book/_toc_test.yml
 
